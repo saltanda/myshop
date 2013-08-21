@@ -5,13 +5,13 @@ define('PathPrefix','../controllers/');
 define('PathPostfix','Controller.php');
 
 //Используем шаблон
-$template="default";
+$template = "default";
 
 //Определяем путь к файлам шаблона
 define('TemplatePrefix',"../views/{$template}");
 define('TemplatePostfix',".tpl");
 //Определяем путь к файлам шаблонизатора
-define('TemplateWebPath',"/templates/{$template}/");
+define('TemplateWebPath',"/template/{$template}/");
 
 //Инициализация класса Smarty
 

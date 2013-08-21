@@ -19,6 +19,6 @@ function loadPage($smarty, $controllerName, $actionName='index') {
  * @param type $smarty  экземпляр класса Smarty
  * @param type $templateName имя шаблона
  */
-function loadTemplate($smarty,$templateName){
-    $smarty->display($templateName.TemplatePrefix);
+function loadTemplate($smarty, $templateName){
+    $smarty->display($templateName . TemplatePostfix);
 }

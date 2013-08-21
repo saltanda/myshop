@@ -1,8 +1,8 @@
 <html>
     <head>
-        <title>{pageTitle}</title>
+        <title>{$pageTitle}</title>
     </head>
     <body>
-        {pageTitle}
+        {$pageTitle}
     </body>
 </html>
