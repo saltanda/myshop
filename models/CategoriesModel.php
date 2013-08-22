@@ -1,7 +1,20 @@
 <?php
 
 /**
- * Модель для работы с категориями
+ * Получение подкатегорий
+ * @param type $catId индефикатор категории
+ */
+function getChildrenForCat($catId){
+    $sql = "SELECT * FROM `categories` WHERE `parent_id` = '{$catId}' ";
+    $rs = mysql_query($sql);
+    return createSmartyRsArray($rs); // функция в mainFunction.php
+    
+}
+
+
+
+/**
+ * Модель для работы с категориями и подкатегориями
  */
 
 function getAllmainCatsWithChildren(){
@@ -9,7 +22,12 @@ function getAllmainCatsWithChildren(){
     $rs = mysql_query($sql);
     
     while ($row = mysql_fetch_assoc($rs)) {
-      $smartyrs[] = $row;
+        $rsChildren = getChildrenForCat($row['id']);
+        if($rsChildren){
+            $row['children'] = $rsChildren;
+        }
+        
+        $smartyrs[] = $row;
     }
     return $smartyrs;
 }
