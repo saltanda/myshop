@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2013-08-22 11:51:13
+<?php /* Smarty version Smarty-3.1.6, created on 2013-08-22 13:08:57
          compiled from "../views/default\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:122952147bf6e34dd8-35031870%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9797888b337e03f99b06385b60a372bbb52d5e02' => 
     array (
       0 => '../views/default\\header.tpl',
-      1 => 1377099278,
+      1 => 1377162521,
       2 => 'file',
     ),
   ),
@@ -43,5 +43,5 @@ css/main.css" type="text/css" />
 	
 <div id="centerColumn">
 
-	centerColumn
+	
 <?php }} ?>
