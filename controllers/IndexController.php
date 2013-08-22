@@ -7,9 +7,6 @@ function indexAction($smarty){
     
     $rsCategories = getAllmainCatsWithChildren(); //Функция возвращает основные категории товаров $smartyrs
     $rsProducts = getLastProducts(16);//Функция возвращает товары $smartyrs
-    /*echo'<pre>';
-    print_r ($rsProducts);
-    echo'</pre>';*/
     
     
     $smarty->assign('pageTitle',"Главная страница");

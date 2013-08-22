@@ -32,4 +32,15 @@ function getAllmainCatsWithChildren(){
     return $smartyrs;
 }
 
+/**
+ *  Перехват id категории и выборка
+ * @param type $cartId id категории
+ */
+
+function getCatById($cartId){
+    $cartId = intval($cartId);
+    $sql = "SELECT * FROM `categories` WHERE `id` = $cartId";
+    $rs = mysql_query($sql);
+    return mysql_fetch_assoc($rs);
+}
      

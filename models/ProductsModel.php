@@ -11,4 +11,11 @@ function getLastProducts($limit = NULL){
     
 }
 
+function getProductsByChild($itemId){
+    $itemId = intval($itemId);
+    $sql = "SELECT * FROM `products` WHERE `category_id` = $itemId";
+    $rs = mysql_query($sql);
+    
+    return createSmartyRsArray($rs);
+}
     
